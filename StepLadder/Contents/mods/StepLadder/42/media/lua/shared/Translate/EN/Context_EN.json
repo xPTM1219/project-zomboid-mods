@@ -1,0 +1,5 @@
+{
+    "ContextMenu_UnfoldLadder": "Unfold Ladder",
+    "ContextMenu_FoldLadder": "Fold Ladder (steps)",
+    "Tooltip_StepLadder_NeedsWall": "Needs a wall on the adjacent square to lean against."
+}

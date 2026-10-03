@@ -1,0 +1,6 @@
+version=1.0.0
+title=Step Ladder
+description=Adds a buildable step ladder. Right-click a placed step ladder to toggle it between a standalone triangle of steps and a straight ladder leaned against a wall.
+description=Requires 1 Woodwork. Crafted with a hammer, 4 planks and 4 nails under Carpentry.
+tags=
+visibility=public

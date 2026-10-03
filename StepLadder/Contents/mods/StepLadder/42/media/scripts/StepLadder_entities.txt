@@ -1,0 +1,59 @@
+module Base
+{
+    xuiSkin default
+    {
+        entity ES_StepLadder
+        {
+            LuaWindowClass = ISEntityWindow,
+            DisplayName = Step Ladder,
+            Icon = Build_StairsWood,
+        }
+    }
+
+    entity StepLadder
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_StepLadder,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            OnCreate = StepLadderCode.OnCreate,
+            OnIsValid = StepLadderCode.OnIsValid,
+            health = 50,
+            skillBaseHealth = 20,
+
+            face W
+            {
+                layer
+                {
+                    row = fixtures_stairs_01_0,
+                }
+            }
+            face S
+            {
+                layer
+                {
+                    row = fixtures_stairs_01_8,
+                }
+            }
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWallHammer,
+            time = 100,
+            SkillRequired = Woodwork:1,
+            xpAward = Woodwork:10,
+            category = Carpentry,
+            Tooltip = Tooltip_craft_stairsDesc,
+            inputs
+            {
+                item 1 tags[base:hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 4 [Base.Plank],
+                item 4 [Base.Nails],
+            }
+        }
+    }
+}

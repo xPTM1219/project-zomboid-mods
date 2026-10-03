@@ -1,0 +1,4 @@
+name=Step Ladder
+id=StepLadder
+description=Adds a buildable step ladder. Right-click a placed step ladder to toggle it between a standalone triangle of steps and a straight ladder leaned against a wall.
+poster=poster.png
